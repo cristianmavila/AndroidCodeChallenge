@@ -21,8 +21,9 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-        val navBarTitle = intent.getStringExtra(ViewHolder.POST_TITLE)
-        supportActionBar?.title = navBarTitle
+        val titlePost = intent.getStringExtra(ViewHolder.POST_TITLE)
+
+        txtPostTitle.text = titlePost
 
         val postID = intent.getIntExtra(ViewHolder.POST_ID, -1)
         val postUser = intent.getIntExtra(ViewHolder.POST_USER, -1)

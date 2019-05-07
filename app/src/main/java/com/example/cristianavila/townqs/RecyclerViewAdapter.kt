@@ -20,7 +20,7 @@ class PostItemAdapter(val context: Context, val postList: List<Post>) : Recycler
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val postItem = postList.get(position)
-        holder.view?.txtPostTitle.text = postItem.title
+        holder.view.txtPostTitle.text = postItem.title
         holder.postItem = postItem
     }
 
